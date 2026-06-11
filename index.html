@@ -45,7 +45,7 @@
 
             <!-- Level 0: Gerência -->
             <div class="org-level org-level--0">
-                <div class="org-card org-card--root" data-type="existing">
+                <div class="org-card org-card--root" id="rootCard" data-type="existing">
                     <div class="org-card__icon">👤</div>
                     <div class="org-card__title">Gerência</div>
                     <div class="org-card__role">Produção de Conteúdo &amp; Operação Moodle</div>
@@ -53,17 +53,15 @@
                 </div>
             </div>
 
-            <!-- Connector from root -->
-            <div class="connector connector--vertical"></div>
-            <div class="connector connector--horizontal-split">
-                <div class="connector--branch-left"></div>
-                <div class="connector--branch-right"></div>
+            <!-- SVG Connector layer -->
+            <div class="connector-layer" id="connectorLayer">
+                <svg id="connectorSvg" class="connector-svg" preserveAspectRatio="none"></svg>
             </div>
 
             <!-- Level 1: Two Fronts -->
             <div class="org-level org-level--1">
                 <!-- EDITORA -->
-                <div class="org-front org-front--editora">
+                <div class="org-front org-front--editora" id="frontEditora">
                     <div class="front-header">
                         <div class="front-label">FRENTE 1</div>
                         <h2 class="front-title">Editora <span class="spin-off-badge">Spin-off</span></h2>
@@ -78,7 +76,7 @@
                         <div class="org-card__badge org-card__badge--new">NOVO</div>
                     </div>
 
-                    <div class="connector connector--vertical-sm"></div>
+                    <div class="connector-vertical-sm"></div>
 
                     <!-- Nucleos Grid -->
                     <div class="nucleos-grid">
@@ -236,7 +234,7 @@
                         <div class="nucleo-card nucleo-card--financeiro">
                             <div class="nucleo-header">
                                 <span class="nucleo-icon">💰</span>
-                                <h3 class="nucleo-title">Núcleo Administrativo-Financeiro</h3>
+                                <h3 class="nucleo-title">Núcleo Adm-Financeiro</h3>
                                 <span class="nucleo-subtitle">Gestão financeira e operacional</span>
                             </div>
                             <ul class="nucleo-roles">
@@ -275,7 +273,7 @@
                                 <li class="role-item role-item--new">
                                     <span class="role-dot"></span>
                                     <div>
-                                        <strong>Especialista em Tecnologia Educacional</strong>
+                                        <strong>Esp. Tecnologia Educacional</strong>
                                         <small>IA, acessibilidade, inovação</small>
                                     </div>
                                 </li>
@@ -285,7 +283,7 @@
                 </div>
 
                 <!-- MOODLE -->
-                <div class="org-front org-front--moodle">
+                <div class="org-front org-front--moodle" id="frontMoodle">
                     <div class="front-header">
                         <div class="front-label">FRENTE 2</div>
                         <h2 class="front-title">Operação Moodle</h2>
@@ -300,7 +298,7 @@
                         <div class="org-card__badge org-card__badge--promoted">REPOSICIONADO</div>
                     </div>
 
-                    <div class="connector connector--vertical-sm"></div>
+                    <div class="connector-vertical-sm"></div>
 
                     <div class="nucleo-card nucleo-card--moodle-team">
                         <div class="nucleo-header">
