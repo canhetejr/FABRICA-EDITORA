@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organograma — Reestruturação Departamental</title>
+    <meta name="description" content="Proposta de organograma para reestruturação da área de Produção de Conteúdo e Operação Moodle com spin-off editorial">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Background animated particles -->
+    <div class="bg-particles" id="particles"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-badge">PROPOSTA DE REESTRUTURAÇÃO</div>
+            <h1 class="header-title">Organograma Departamental</h1>
+            <p class="header-subtitle">Spin-off Editorial &amp; Operação Moodle</p>
+        </div>
+    </header>
+
+    <!-- Legend -->
+    <section class="legend-section">
+        <div class="legend-container">
+            <div class="legend-item">
+                <span class="legend-dot legend-dot--existing"></span>
+                <span>Cargo existente</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot legend-dot--new"></span>
+                <span>Cargo novo (a criar)</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot legend-dot--promoted"></span>
+                <span>Cargo reposicionado</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Org Chart -->
+    <main class="org-chart-container">
+        <div class="org-chart" id="orgChart">
+
+            <!-- Level 0: Gerência -->
+            <div class="org-level org-level--0">
+                <div class="org-card org-card--root" data-type="existing">
+                    <div class="org-card__icon">👤</div>
+                    <div class="org-card__title">Gerência</div>
+                    <div class="org-card__role">Produção de Conteúdo &amp; Operação Moodle</div>
+                    <div class="org-card__badge org-card__badge--existing">Você</div>
+                </div>
+            </div>
+
+            <!-- Connector from root -->
+            <div class="connector connector--vertical"></div>
+            <div class="connector connector--horizontal-split">
+                <div class="connector--branch-left"></div>
+                <div class="connector--branch-right"></div>
+            </div>
+
+            <!-- Level 1: Two Fronts -->
+            <div class="org-level org-level--1">
+                <!-- EDITORA -->
+                <div class="org-front org-front--editora">
+                    <div class="front-header">
+                        <div class="front-label">FRENTE 1</div>
+                        <h2 class="front-title">Editora <span class="spin-off-badge">Spin-off</span></h2>
+                        <p class="front-desc">Absorve a Fábrica de Conteúdo + novas áreas de suporte</p>
+                    </div>
+
+                    <!-- Direção Editorial -->
+                    <div class="org-card org-card--direction" data-type="new">
+                        <div class="org-card__icon">🏛️</div>
+                        <div class="org-card__title">Diretor(a) Editorial</div>
+                        <div class="org-card__role">Gestão estratégica da editora</div>
+                        <div class="org-card__badge org-card__badge--new">NOVO</div>
+                    </div>
+
+                    <div class="connector connector--vertical-sm"></div>
+
+                    <!-- Nucleos Grid -->
+                    <div class="nucleos-grid">
+
+                        <!-- Núcleo de Produção Editorial -->
+                        <div class="nucleo-card nucleo-card--producao">
+                            <div class="nucleo-header">
+                                <span class="nucleo-icon">📚</span>
+                                <h3 class="nucleo-title">Núcleo de Produção Editorial</h3>
+                                <span class="nucleo-subtitle">Ex-Fábrica de Conteúdo</span>
+                            </div>
+                            <ul class="nucleo-roles">
+                                <li class="role-item role-item--promoted">
+                                    <span class="role-dot"></span>
+                                    <div>
+                                        <strong>Coordenador(a) de Produção</strong>
+                                        <small>Gestão de fluxos e entregas</small>
+                                    </div>
+                                </li>
+                                <li class="role-item role-item--existing">
+                                    <span class="role-dot"></span>
+                                    <div>
+                                        <strong>Supervisor(a) de Produção</strong>
+                                        <small>Acompanhamento operacional</small>
+                                    </div>
+                                </li>
+                                <li class="role-item role-item--existing">
+                                    <span class="role-dot"></span>
+                                    <div>
+                                        <strong>Designer Instrucional</strong>
+                                        <small>Criação e estruturação didática</small>
+                                    </div>
+                                </li>
+                                <li class="role-item role-item--existing">
+                                    <span class="role-dot"></span>
+                                    <div>
+                                        <strong>Diagramador(a)</strong>
+                                        <small>Layout e composição visual</small>
+                                    </div>
+                                </li>
+                                <li class="role-item role-item--new">
+                                    <span class="role-dot"></span>
+                                    <div>
+                                        <strong>Ilustrador(a)</strong>
+                                        <small>Criação de arte e infográficos</small>
+                                    </div>
+                                </li>
+                                <li class="role-item role-item--new">
+                                    <span class="role-dot"></span>
+                                    <div>
+                                        <strong>Revisor(a) de Conteúdo</strong>
+                                        <small>Revisão textual e normativa</small>
+                                    </div>
+                                </li>
+                                <li class="role-item role-item--existing">
+                                    <span class="role-dot"></span>
+                                    <div>
+                                        <strong>Auxiliar de Produção</strong>
+                                        <small>Apoio operacional</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Núcleo Audiovisual -->
+                        <div class="nucleo-card nucleo-card--audiovisual">
+                            <div class="nucleo-header">
+                                <span class="nucleo-icon">🎬</span>
+                                <h3 class="nucleo-title">Núcleo Audiovisual</h3>
+                                <span class="nucleo-subtitle">Gravação e pós-produção</span>
+                            </div>
+                            <ul class="nucleo-roles">
+                                <li class="role-item role-item--new">
+                                    <span class="role-dot"></span>
+                                    <div>
+                                        <strong>Coordenador(a) Audiovisual</strong>
+                                        <small>Gestão de produção AV</small>
+                                    </div>
+                                </li>
+                                <li class="role-item role-item--new">
+                                    <span class="role-dot"></span>
+                                    <div>
+                                        <strong>Produtor(a) / Cinegrafista</strong>
+                                        <small>Captação e direção de gravação</small>
+                                    </div>
+                                </li>
+                                <li class="role-item role-item--new">
+                                    <span class="role-dot"></span>
+                                    <div>
+                                        <strong>Editor(a) de Vídeo</strong>
+                                        <small>Pós-produção e finalização</small>
+                                    </div>
+                                </li>
+                                <li class="role-item role-item--new">
+                                    <span class="role-dot"></span>
+                                    <div>
+                                        <strong>Motion Designer</strong>
+                                        <small>Animações e vinhetas</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Gestão de Autores -->
+                        <div class="nucleo-card nucleo-card--autores">
+                            <div class="nucleo-header">
+                                <span class="nucleo-icon">✍️</span>
+                                <h3 class="nucleo-title">Gestão de Autores</h3>
+                                <span class="nucleo-subtitle">Professores conteudistas</span>
+                            </div>
+                            <ul class="nucleo-roles">
+                                <li class="role-item role-item--new">
+                                    <span class="role-dot"></span>
+                                    <div>
+                                        <strong>Coordenador(a) de Autores</strong>
+                                        <small>Captação e acompanhamento</small>
+                                    </div>
+                                </li>
+                                <li class="role-item role-item--new">
+                                    <span class="role-dot"></span>
+                                    <div>
+                                        <strong>Analista de Contratos</strong>
+                                        <small>Contratos de cessão e prazos</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Núcleo Jurídico -->
+                        <div class="nucleo-card nucleo-card--juridico">
+                            <div class="nucleo-header">
+                                <span class="nucleo-icon">⚖️</span>
+                                <h3 class="nucleo-title">Núcleo Jurídico</h3>
+                                <span class="nucleo-subtitle">Compliance e contratos</span>
+                            </div>
+                            <ul class="nucleo-roles">
+                                <li class="role-item role-item--new">
+                                    <span class="role-dot"></span>
+                                    <div>
+                                        <strong>Assessor(a) Jurídico(a)</strong>
+                                        <small>Direitos autorais, ISBN, contratos</small>
+                                    </div>
+                                </li>
+                                <li class="role-item role-item--new">
+                                    <span class="role-dot"></span>
+                                    <div>
+                                        <strong>Assistente Jurídico(a)</strong>
+                                        <small>Suporte documental</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Núcleo Financeiro -->
+                        <div class="nucleo-card nucleo-card--financeiro">
+                            <div class="nucleo-header">
+                                <span class="nucleo-icon">💰</span>
+                                <h3 class="nucleo-title">Núcleo Administrativo-Financeiro</h3>
+                                <span class="nucleo-subtitle">Gestão financeira e operacional</span>
+                            </div>
+                            <ul class="nucleo-roles">
+                                <li class="role-item role-item--new">
+                                    <span class="role-dot"></span>
+                                    <div>
+                                        <strong>Analista Financeiro(a)</strong>
+                                        <small>Orçamentos, custos e receitas</small>
+                                    </div>
+                                </li>
+                                <li class="role-item role-item--new">
+                                    <span class="role-dot"></span>
+                                    <div>
+                                        <strong>Assistente Administrativo(a)</strong>
+                                        <small>Compras, fornecedores e rotinas</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Qualidade e Inovação -->
+                        <div class="nucleo-card nucleo-card--qualidade">
+                            <div class="nucleo-header">
+                                <span class="nucleo-icon">🔬</span>
+                                <h3 class="nucleo-title">Qualidade &amp; Inovação</h3>
+                                <span class="nucleo-subtitle">Padrões e melhoria contínua</span>
+                            </div>
+                            <ul class="nucleo-roles">
+                                <li class="role-item role-item--new">
+                                    <span class="role-dot"></span>
+                                    <div>
+                                        <strong>Analista de Qualidade</strong>
+                                        <small>Padrões editoriais e MEC</small>
+                                    </div>
+                                </li>
+                                <li class="role-item role-item--new">
+                                    <span class="role-dot"></span>
+                                    <div>
+                                        <strong>Especialista em Tecnologia Educacional</strong>
+                                        <small>IA, acessibilidade, inovação</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MOODLE -->
+                <div class="org-front org-front--moodle">
+                    <div class="front-header">
+                        <div class="front-label">FRENTE 2</div>
+                        <h2 class="front-title">Operação Moodle</h2>
+                        <p class="front-desc">Ambiente virtual de aprendizagem</p>
+                    </div>
+
+                    <!-- Coordenação Moodle -->
+                    <div class="org-card org-card--coord-moodle" data-type="promoted">
+                        <div class="org-card__icon">🎓</div>
+                        <div class="org-card__title">Coordenador(a) de Ambientes Virtuais</div>
+                        <div class="org-card__role">Gestão estratégica do AVA</div>
+                        <div class="org-card__badge org-card__badge--promoted">REPOSICIONADO</div>
+                    </div>
+
+                    <div class="connector connector--vertical-sm"></div>
+
+                    <div class="nucleo-card nucleo-card--moodle-team">
+                        <div class="nucleo-header">
+                            <span class="nucleo-icon">🖥️</span>
+                            <h3 class="nucleo-title">Equipe Moodle</h3>
+                            <span class="nucleo-subtitle">Montagem e suporte AVA</span>
+                        </div>
+                        <ul class="nucleo-roles">
+                            <li class="role-item role-item--existing">
+                                <span class="role-dot"></span>
+                                <div>
+                                    <strong>Designer Moodle Sênior</strong>
+                                    <small>Estruturação de disciplinas</small>
+                                </div>
+                            </li>
+                            <li class="role-item role-item--existing">
+                                <span class="role-dot"></span>
+                                <div>
+                                    <strong>Designer Moodle Pleno</strong>
+                                    <small>Montagem e configuração</small>
+                                </div>
+                            </li>
+                            <li class="role-item role-item--existing">
+                                <span class="role-dot"></span>
+                                <div>
+                                    <strong>Assistente Educacional</strong>
+                                    <small>Suporte pedagógico no AVA</small>
+                                </div>
+                            </li>
+                            <li class="role-item role-item--existing">
+                                <span class="role-dot"></span>
+                                <div>
+                                    <strong>Auxiliar de Operações</strong>
+                                    <small>Apoio operacional</small>
+                                </div>
+                            </li>
+                            <li class="role-item role-item--new">
+                                <span class="role-dot"></span>
+                                <div>
+                                    <strong>Analista de Dados Educacionais</strong>
+                                    <small>Learning analytics e relatórios</small>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Summary Section -->
+    <section class="summary-section">
+        <div class="summary-container">
+            <h2 class="summary-title">Resumo da Reestruturação</h2>
+            <div class="summary-grid">
+                <div class="summary-card">
+                    <div class="summary-card__number" id="counterExisting">0</div>
+                    <div class="summary-card__label">Cargos Existentes</div>
+                    <div class="summary-card__desc">Mantidos ou reposicionados</div>
+                </div>
+                <div class="summary-card summary-card--highlight">
+                    <div class="summary-card__number" id="counterNew">0</div>
+                    <div class="summary-card__label">Novos Cargos</div>
+                    <div class="summary-card__desc">A serem criados</div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-card__number" id="counterTotal">0</div>
+                    <div class="summary-card__label">Total de Posições</div>
+                    <div class="summary-card__desc">Na estrutura completa</div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-card__number" id="counterNucleos">0</div>
+                    <div class="summary-card__label">Núcleos</div>
+                    <div class="summary-card__desc">Áreas funcionais</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rationale Section -->
+    <section class="rationale-section">
+        <div class="rationale-container">
+            <h2 class="rationale-title">Justificativa dos Novos Cargos</h2>
+            <div class="rationale-grid">
+                <div class="rationale-card" data-area="juridico">
+                    <div class="rationale-icon">⚖️</div>
+                    <h3>Núcleo Jurídico</h3>
+                    <p>Essencial para uma editora: gestão de <strong>direitos autorais</strong>, registros <strong>ISBN</strong>, contratos de cessão com professores conteudistas e compliance editorial. Sem isso, a operação como editora é juridicamente inviável.</p>
+                </div>
+                <div class="rationale-card" data-area="financeiro">
+                    <div class="rationale-icon">💰</div>
+                    <h3>Núcleo Financeiro</h3>
+                    <p>Como spin-off, a editora precisa de <strong>gestão financeira própria</strong>: controle de custos por disciplina, precificação de serviços, orçamento operacional e gestão de fornecedores (gráficas, freelancers).</p>
+                </div>
+                <div class="rationale-card" data-area="ilustracao">
+                    <div class="rationale-icon">🎨</div>
+                    <h3>Ilustrador(a)</h3>
+                    <p>Materiais de EAD de qualidade exigem <strong>arte original</strong>: infográficos, diagramas técnicos, ilustrações didáticas. Ter um ilustrador interno garante identidade visual consistente e reduz dependência de bancos de imagem.</p>
+                </div>
+                <div class="rationale-card" data-area="revisao">
+                    <div class="rationale-icon">📝</div>
+                    <h3>Revisor(a) de Conteúdo</h3>
+                    <p>Padrão editorial exige <strong>revisão profissional</strong>: ortográfica, gramatical, normativa (ABNT) e de consistência terminológica. Fundamental para credibilidade da editora e conformidade com MEC.</p>
+                </div>
+                <div class="rationale-card" data-area="audiovisual">
+                    <div class="rationale-icon">🎬</div>
+                    <h3>Núcleo Audiovisual</h3>
+                    <p>A produção de <strong>videoaulas</strong> é central no EAD. Profissionalizar com coordenação, captação e pós-produção dedicadas eleva a qualidade e permite escalar a produção de conteúdo multimídia.</p>
+                </div>
+                <div class="rationale-card" data-area="qualidade">
+                    <div class="rationale-icon">🔬</div>
+                    <h3>Qualidade &amp; Inovação</h3>
+                    <p>Garante <strong>padrões MEC</strong>, acessibilidade (WCAG), e incorporação de <strong>novas tecnologias</strong> (IA generativa, learning analytics). Diferencial competitivo para o spin-off.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Proposta de Reestruturação Organizacional — Projeto de Mestrado</p>
+            <p class="footer-sub">Transformação da Fábrica de Conteúdo em Editora Spin-off</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
